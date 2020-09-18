@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>_04._观察者模式</RootNamespace>
+    <RootNamespace>观察者模式</RootNamespace>
   </PropertyGroup>
 
 </Project>

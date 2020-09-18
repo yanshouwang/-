@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _06._迪米特法则
+namespace 迪米特法则
 {
     class Program
     {

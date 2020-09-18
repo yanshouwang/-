@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _04._观察者模式
+namespace 观察者模式
 {
     class Program
     {

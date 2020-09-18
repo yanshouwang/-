@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _03._里氏替换原则
+namespace 里氏替换原则
 {
     class Program
     {

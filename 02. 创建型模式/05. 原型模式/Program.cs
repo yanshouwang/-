@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _05._原型模式
+namespace 原型模式
 {
     class Program
     {

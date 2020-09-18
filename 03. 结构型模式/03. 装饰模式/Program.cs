@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _03._装饰模式
+namespace 装饰器模式
 {
     class Program
     {

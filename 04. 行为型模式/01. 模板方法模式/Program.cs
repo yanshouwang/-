@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _01._模板方法模式
+namespace 模板方法模式
 {
     class Program
     {

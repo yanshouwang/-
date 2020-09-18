@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>_06._中介者模式</RootNamespace>
+    <RootNamespace>中介者模式</RootNamespace>
   </PropertyGroup>
 
 </Project>

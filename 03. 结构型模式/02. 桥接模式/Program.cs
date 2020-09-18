@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _02._桥接模式
+namespace 桥接模式
 {
     class Program
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _04._组合模式
+namespace 组合模式
 {
     class Program
     {

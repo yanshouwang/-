@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace _01._单例模式
+namespace 单例模式
 {
     class Singleton
     {

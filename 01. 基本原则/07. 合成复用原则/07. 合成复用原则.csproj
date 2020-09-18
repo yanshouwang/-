@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>_07._合成复用原则</RootNamespace>
+    <RootNamespace>合成复用原则</RootNamespace>
   </PropertyGroup>
 
 </Project>

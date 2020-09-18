@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _07._职责链模式
+namespace 职责链模式
 {
     class Program
     {

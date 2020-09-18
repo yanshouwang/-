@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _01._单一职责原则
+namespace 单一职责原则
 {
     class Program
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _05._依赖倒置原则
+namespace 依赖倒置原则
 {
     class Program
     {

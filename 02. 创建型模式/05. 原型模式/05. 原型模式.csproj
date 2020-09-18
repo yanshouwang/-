@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>_05._原型模式</RootNamespace>
+    <RootNamespace>原型模式</RootNamespace>
   </PropertyGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _08._备忘录模式
+namespace 备忘录模式
 {
     class Program
     {

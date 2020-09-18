@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _06._享元模式
+namespace 享元模式
 {
     class Program
     {

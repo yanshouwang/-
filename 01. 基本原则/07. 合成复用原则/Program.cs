@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _07._合成复用原则
+namespace 合成复用原则
 {
     class Program
     {

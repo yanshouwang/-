@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _05._解释器模式
+namespace 解释器模式
 {
     class Program
     {

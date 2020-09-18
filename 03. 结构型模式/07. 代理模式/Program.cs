@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _07._代理模式
+namespace 代理模式
 {
     class Program
     {

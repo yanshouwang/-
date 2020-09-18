@@ -1,4 +1,4 @@
-﻿namespace _02._简单工厂模式
+﻿namespace 简单工厂模式
 {
     enum CarType
     {

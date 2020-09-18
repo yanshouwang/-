@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _06._中介者模式
+namespace 中介者模式
 {
     class Program
     {

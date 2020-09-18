@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>_02._开闭原则</RootNamespace>
+    <RootNamespace>开闭原则</RootNamespace>
   </PropertyGroup>
 
 </Project>

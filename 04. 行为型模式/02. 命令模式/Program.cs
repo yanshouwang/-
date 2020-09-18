@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _02._命令模式
+namespace 命令模式
 {
     class Program
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _02._开闭原则
+namespace 开闭原则
 {
     class Program
     {

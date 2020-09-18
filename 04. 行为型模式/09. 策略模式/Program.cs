@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _09._策略模式
+namespace 策略模式
 {
     class Program
     {
