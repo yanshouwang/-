@@ -6,17 +6,15 @@ using System.Text;
 
 namespace 单例模式
 {
-    class Singleton
+    class S1
     {
-        private static volatile Singleton _instance;
+        private static volatile S1 _instance;
         private static readonly object _obj = new object();
 
-        private Singleton()
-        {
-
-        }
-
-        public static Singleton Instance
+        /// <summary>
+        /// 懒汉式，通过双 lock 加 if 实现，注意静态字段中的 volatile 关键字
+        /// </summary>
+        public static S1 Instance
         {
             get
             {
@@ -26,7 +24,7 @@ namespace 单例模式
                     {
                         if (_instance == null)
                         {
-                            _instance = new Singleton();
+                            _instance = new S1();
                         }
                     }
                 }
@@ -34,9 +32,14 @@ namespace 单例模式
             }
         }
 
+        private S1()
+        {
+
+        }
+
         public void SayHello()
         {
-            Console.WriteLine($"Hello, My HashCode is {this.GetHashCode()}");
+            Console.WriteLine($"S1, HashCode: {this.GetHashCode()}");
         }
     }
 }
