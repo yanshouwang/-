@@ -26,62 +26,15 @@ namespace 建造者模式
 
         public Computer()
         {
-            Memories = new List<Memory>();
-            Disks = new List<Disk>();
+            this.Memories = new List<Memory>();
+            this.Disks = new List<Disk>();
         }
 
         public override string ToString()
         {
-            string memories = Memories.Aggregate(string.Empty, (total, next) => $"{total}\n{next}");
-            return $"主板：{Motherboard}\n处理器:{CPU}\n显卡:{GPU}\n内存：\n硬盘：\n电源：\n显示器：";
-        }
-
-        class ComputerBuilder
-        {
-            private readonly Lazy<Computer> _lazyComputer = new Lazy<Computer>(true);
-
-            private Computer Computer
-                => _lazyComputer.Value;
-
-            public void SetMatherboard(Motherboard motherboard)
-            {
-                this.Computer.Motherboard = motherboard;
-            }
-
-            public void SetCPU(CPU cpu)
-            {
-                this.Computer.CPU = cpu;
-            }
-
-            public void SetGPU(GPU gpu)
-            {
-                this.Computer.GPU = gpu;
-            }
-
-            public void AddMemory(Memory memory)
-            {
-                this.Computer.Memories.Add(memory);
-            }
-
-            public void AddDisk(Disk disk)
-            {
-                this.Computer.Disks.Add(disk);
-            }
-
-            public void SetPower(Power power)
-            {
-                this.Computer.Power = power;
-            }
-
-            public void SetMonitor(Monitor monitor)
-            {
-                this.Computer.Monitor = monitor;
-            }
-
-            public Computer Build()
-            {
-                return this.Computer;
-            }
+            string memories = this.Memories.Aggregate(string.Empty, (total, next) => $"{total}\t{next}\n", result => result.TrimEnd());
+            string disks = this.Disks.Aggregate(string.Empty, (total, next) => $"{total}\t{next}\n", result => result.TrimEnd());
+            return $"主板：{this.Motherboard}\n处理器：{this.CPU}\n显卡：{this.GPU}\n内存：\n{memories}\n硬盘：\n{disks}\n电源：{this.Power}\n显示器：{this.Monitor}";
         }
     }
 }

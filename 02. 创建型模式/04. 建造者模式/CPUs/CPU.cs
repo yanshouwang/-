@@ -4,7 +4,18 @@ using System.Text;
 
 namespace 建造者模式.CPUs
 {
-    class CPU
+    abstract class CPU
     {
+        public string Name { get; }
+
+        public CPU(string name)
+        {
+            this.Name = name;
+        }
+
+        public override string ToString()
+        {
+            return this.Name;
+        }
     }
 }
