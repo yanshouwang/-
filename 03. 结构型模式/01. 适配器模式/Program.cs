@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Common;
 
 namespace 适配器模式
 {
@@ -7,6 +8,9 @@ namespace 适配器模式
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            TwoPin twoPin = new TwoPin();
+            ITwoHole twoHole = new TwoHoleAdapter();
+            twoPin.Connect(twoHole);
         }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace 享元模式
 {
@@ -7,6 +9,16 @@ namespace 享元模式
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            for (int i = 0; i < 1000; i++)
+            {
+                Task.Run(() =>
+                {
+                    Thread.CurrentThread.IsBackground = false;
+                    int id = Thread.CurrentThread.ManagedThreadId;
+                    Console.WriteLine(id);
+                });
+            }
         }
     }
 }

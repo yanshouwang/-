@@ -12,7 +12,7 @@ namespace 单例模式
         private static readonly object _obj = new object();
 
         /// <summary>
-        /// 懒汉式，通过双 lock 加 if 实现，注意静态字段中的 volatile 关键字
+        /// 懒汉式，通过双 if 加 lock 实现，注意静态字段中的 volatile 关键字
         /// </summary>
         public static S1 Instance
         {
