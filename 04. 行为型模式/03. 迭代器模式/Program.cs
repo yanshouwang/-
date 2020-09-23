@@ -7,6 +7,14 @@ namespace 迭代器模式
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            object[] objs = new[] { "Hello World", "OMG", "How are you" };
+            IList list = new ArrayList(objs);
+            IIterator iterator = list.GetIterator();
+            while (iterator.MoveNext())
+            {
+                string str = (string)iterator.Current;
+                Console.WriteLine(str);
+            }
         }
     }
 }

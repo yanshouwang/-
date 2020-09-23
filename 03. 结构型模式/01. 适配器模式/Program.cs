@@ -9,7 +9,8 @@ namespace 适配器模式
         {
             Console.WriteLine("Hello World!");
             TwoPin twoPin = new TwoPin();
-            ITwoHole twoHole = new TwoHoleAdapter();
+            ThreeHole threeHole = new ThreeHole();
+            ITwoHole twoHole = new TwoHoleAdapter(threeHole);
             twoPin.Connect(twoHole);
         }
     }

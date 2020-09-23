@@ -6,7 +6,10 @@ namespace 命令模式
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Button button = new Button();
+            Printer printer = new Printer();
+            button.Command = new PrinterCommand(printer);
+            button.Click();
         }
     }
 }

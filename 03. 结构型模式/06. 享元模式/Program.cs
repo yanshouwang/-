@@ -10,7 +10,7 @@ namespace 享元模式
         {
             Console.WriteLine("Hello World!");
 
-            for (int i = 0; i < 1000; i++)
+            for (int i = 0; i < 10000; i++)
             {
                 Task.Run(() =>
                 {

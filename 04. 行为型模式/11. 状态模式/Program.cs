@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Linq;
 
 namespace 状态模式
 {
@@ -7,6 +9,12 @@ namespace 状态模式
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            Context context = new Context();
+            IState startState = new StartState();
+            startState.Execute(context);
+            IState stopState = new StopState();
+            stopState.Execute(context);
         }
     }
 }

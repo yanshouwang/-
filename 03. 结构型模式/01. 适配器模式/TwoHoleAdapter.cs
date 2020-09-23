@@ -14,9 +14,9 @@ namespace 适配器模式
         public string Fire
             => this._threeHole.Fire;
 
-        public TwoHoleAdapter()
+        public TwoHoleAdapter(ThreeHole threeHole)
         {
-            this._threeHole = new ThreeHole();
+            this._threeHole = threeHole;
         }
     }
 }
